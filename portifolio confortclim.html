@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ConfortClim - Soluções completas em Ar-Condicionado, Refrigeração e Manutenção.">
+    <title>ConfortClim | Climatização e Refrigeração</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root { --primary: #2563eb; --secondary: #1e3a8a; --accent: #38bdf8; --success: #22c55e; }
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        h1, h2, h3, .font-title { font-family: 'Rajdhani', sans-serif; }
+        .reveal { position: relative; transform: translateY(30px); opacity: 0; transition: all 0.8s ease-out; }
+        .reveal.active { transform: translateY(0); opacity: 1; }
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .service-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .service-card:hover { transform: translateY(-12px); }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #2563eb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-shine { position: relative; overflow: hidden; }
+        .btn-shine::after { content: ""; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent); transform: rotate(45deg); transition: 0.5s; display: block; }
+        .btn-shine:hover::after { left: 120%; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <nav class="glass-nav fixed w-full z-[1000] transition-all duration-300" id="main-nav">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="bg-blue-600 p-2 rounded-xl group-hover:rotate-12 transition">
+                    <i class="fas fa-snowflake text-white text-2xl"></i>
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="text-2xl font-black text-slate-900 tracking-tighter uppercase">CONFORT<span class="text-blue-600">CLIM</span></span>
+                    <span class="text-[10px] font-bold text-slate-400 tracking-[0.3em] uppercase">Refrigeração & Ar</span>
+                </div>
+            </a>
+
+            <div class="hidden lg:flex items-center space-x-10">
+                <div class="flex space-x-8 font-bold text-xs uppercase tracking-widest text-slate-600">
+                    <a href="#home" class="hover:text-blue-600 transition">Início</a>
+                    <a href="#servicos" class="hover:text-blue-600 transition">Serviços</a>
+                    <a href="#portfolio" class="hover:text-blue-600 transition">Projetos</a>
+                    <a href="#orcamento" class="hover:text-blue-600 transition">Calculadora</a>
+                </div>
+                <a href="https://wa.me/5586995122772" class="btn-shine bg-blue-600 text-white px-8 py-3 rounded-full font-bold text-sm shadow-xl shadow-blue-200 hover:bg-blue-700 transition">
+                    FALAR COM ESPECIALISTA
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-slate-950">
+            <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7bc3?q=80&w=1470" alt="Ar Condicionado" class="w-full h-full object-cover opacity-40">
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center md:text-left">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center gap-2 bg-blue-600/20 backdrop-blur-md border border-blue-500/30 px-4 py-2 rounded-full mb-8 reveal active">
+                    <span class="text-blue-100 text-xs font-bold uppercase tracking-widest">Qualidade e Confiança em Climatização</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-8xl font-black text-white leading-none mb-6 reveal active" style="transition-delay: 200ms;">
+                    CONFORTO TÉRMICO <br> <span class="gradient-text">DE ALTO NÍVEL.</span>
+                </h1>
+                
+                <p class="text-xl text-slate-300 mb-10 max-w-2xl reveal active leading-relaxed" style="transition-delay: 400ms;">
+                    Especialistas em sistemas residenciais e comerciais. A ConfortClim oferece instalação, manutenção e refrigeração com o selo de garantia que você procura.
+                </p>
+
+                <div class="flex flex-wrap gap-6 justify-center md:justify-start reveal active" style="transition-delay: 600ms;">
+                    <a href="https://wa.me/5586995122772" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-2xl font-black text-lg transition flex items-center gap-3 shadow-2xl">
+                        SOLICITAR ORÇAMENTO <i class="fas fa-chevron-right text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-blue-600 font-bold uppercase tracking-[0.3em] text-sm mb-4">O que fazemos</h2>
+                <h3 class="text-5xl font-black text-slate-900">Nossas Soluções Técnicas</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="service-card group bg-slate-50 p-10 rounded-[40px] border border-slate-100 hover:border-blue-200">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-2xl mb-8"><i class="fas fa-wind"></i></div>
+                    <h4 class="text-2xl font-black text-slate-900 mb-4">Ar-Condicionado</h4>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">Instalação, manutenção preventiva, higienização profunda e carga de gás com precisão.</p>
+                    <ul class="text-slate-500 text-xs space-y-2 font-bold uppercase tracking-wider">
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i> Instalação Split/Inverter</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i> Limpeza Bactericida</li>
+                    </ul>
+                </div>
+
+                <div class="service-card group bg-slate-50 p-10 rounded-[40px] border border-slate-100 hover:border-blue-200">
+                    <div class="w-16 h-16 bg-blue-500 text-white rounded-2xl flex items-center justify-center text-2xl mb-8"><i class="fas fa-box-open"></i></div>
+                    <h4 class="text-2xl font-black text-slate-900 mb-4">Refrigeração</h4>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">Conserto de geladeiras, freezers e sistemas comerciais. Mantendo seus produtos sempre frios.</p>
+                    <ul class="text-slate-500 text-xs space-y-2 font-bold uppercase tracking-wider">
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i> Geladeiras e Freezers</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i> Câmaras Frias</li>
+                    </ul>
+                </div>
+
+                <div class="service-card group bg-slate-50 p-10 rounded-[40px] border border-slate-100 hover:border-blue-200">
+                    <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-2xl mb-8"><i class="fas fa-building"></i></div>
+                    <h4 class="text-2xl font-black text-slate-900 mb-4">PMOC / Empresas</h4>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">Contratos de manutenção empresarial em total conformidade com as normas da Anvisa.</p>
+                    <ul class="text-slate-500 text-xs space-y-2 font-bold uppercase tracking-wider">
+                        <li><i class="fas fa-check text-slate-900 mr-2"></i> Laudo Técnico</li>
+                        <li><i class="fas fa-check text-slate-900 mr-2"></i> Cronograma Mensal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="orcamento" class="py-24 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h3 class="text-5xl font-black text-white mb-6 uppercase leading-tight">Calcule a <br><span class="text-blue-500">Potência Ideal</span></h3>
+                    <p class="text-slate-400 mb-12">Use nossa ferramenta para saber exatamente quantos BTUs seu ambiente precisa antes de contratar.</p>
+                    <div class="space-y-6">
+                        <div class="flex gap-4 items-center text-white"><i class="fas fa-check-circle text-blue-500"></i> Economia de Energia</div>
+                        <div class="flex gap-4 items-center text-white"><i class="fas fa-check-circle text-blue-500"></i> Maior Vida Útil</div>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-xl p-10 rounded-[40px] border border-white/10 shadow-2xl">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <label class="text-[10px] font-bold text-blue-400 uppercase mb-2 block">Metragem (m²)</label>
+                            <input type="number" id="m2" class="w-full bg-slate-800 border-none p-4 rounded-xl text-white outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="text-[10px] font-bold text-blue-400 uppercase mb-2 block">Pessoas no local</label>
+                            <input type="number" id="pessoas" class="w-full bg-slate-800 border-none p-4 rounded-xl text-white outline-none">
+                        </div>
+                    </div>
+                    <button onclick="calcBTU()" class="w-full bg-blue-600 text-white py-5 rounded-2xl font-black text-lg hover:bg-blue-700 transition">CALCULAR BTUS</button>
+                    <div id="res-btu" class="mt-8 text-center text-white text-3xl font-black hidden animate-pulse">-- BTUs</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-2xl font-black mb-4 tracking-tighter uppercase">CONFORT<span class="text-blue-600">CLIM</span></div>
+            <p class="text-slate-500 mb-8">Qualidade, Segurança e Conforto Térmico.</p>
+            <div class="text-sm font-bold text-slate-400">
+                <p>📍 Atendimento Residencial e Comercial</p>
+                <p>📞 (86) 99512-2772</p>
+            </div>
+            <p class="text-[10px] text-slate-700 mt-12 uppercase tracking-widest">&copy; 2026 ConfortClim. Direitos Reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5586995122772" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl z-[1000] hover:scale-110 transition-all">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Lógica da Calculadora
+        function calcBTU() {
+            const m2 = document.getElementById('m2').value || 0;
+            const pessoas = document.getElementById('pessoas').value || 1;
+            const btu = (m2 * 600) + (pessoas * 600);
+            const res = document.getElementById('res-btu');
+            res.innerText = btu + " BTUs";
+            res.classList.remove('hidden');
+        }
+
+        // Revelação de Scroll
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.reveal').forEach(el => {
+                if(el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
