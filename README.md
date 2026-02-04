@@ -13,7 +13,3 @@ Landing Page premium de alta conversão desenvolvida para a **ConfortClim**. O p
 - **Tailwind CSS** (via CDN para performance)
 - **JavaScript Vanilla** (Lógica de cálculo e animações)
 - **FontAwesome** (Ícones profissionais)
-
-## 📦 Como rodar o projeto
-1. Clone o repositório.
-2. Abra o arquivo `index.html` em qualquer navegador moderno.
